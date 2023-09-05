@@ -1,0 +1,137 @@
+.project_page
+{
+    display: flex;
+    flex-direction: column;
+
+    background-color: bisque;
+
+    width: 98%;
+
+    border-radius: 30px;
+
+    margin-top: 50px;
+
+    padding-bottom: 180px;
+
+    position: relative;
+}
+
+.personal_projects,
+.school_projects
+{
+    border-radius: 30px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    padding-bottom: 30px;
+
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.personal_projects
+{
+    background-color: lavender;
+
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.school_projects
+{
+    background-color: rgb(201,232,253);
+
+    margin-top: 180px;
+    margin-right: 30px;
+}
+
+.project_header
+{
+    margin-left: 40px;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    position: sticky;
+
+    left: 40px;
+}
+
+.project_content
+{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.project_lastelement
+{
+    margin-right: 40px;
+}
+
+.project_img
+{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+.project_content:hover .project_img
+{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.project_personal_caption
+{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    right: 4%;
+}
+
+.project_school_caption
+{
+    position: absolute;
+    top: 85%;
+    left: 4%;
+    right: 4%;
+}
+
+
+.project_caption
+{
+    opacity: 1;
+
+    transition: 0.5s;
+
+    white-space: normal;
+}
+
+.project_caption:hover
+{
+    opacity: 0;
+} 
+
+.project_content:hover .project_caption
+{
+    opacity: 1;
+}
+  
+.project_content:hover .project_caption:hover 
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project_content:hover .project_caption:hover .project_img
+{
+    opacity: 1;
+}
+
+.project_content:not(:hover) .project_caption {
+    opacity: 0;
+    /* change thisback to 0 later */
+}
