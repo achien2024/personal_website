@@ -1,7 +1,0 @@
-.page_layout
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: space-between;
-}
