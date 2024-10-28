@@ -1,0 +1,38 @@
+.column img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.column img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+}
+
+.modal-content {
+    max-width: 90%; /* Fill 70% of the screen */
+    max-height: 70%;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
