@@ -1,0 +1,100 @@
+.slideshow_container
+{
+  width: 100%;
+  height: auto;
+  margin: 100px auto 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: row;
+}
+
+.slideshow_container div {
+  flex: 1; /* Ensures both divs take equal space */
+}
+
+.photo_intro
+{
+  font-size: 20px;
+  display: flex; /* Add this */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  position: relative;
+  top: -10px;
+}
+
+.photo_intro p
+{
+  width: 690px;
+  padding-bottom: 10px;
+}
+
+.image_container
+{
+  position: relative;
+}
+
+.home_image
+{
+  width: 99%;
+  /* max-width: 99%; */
+  height: auto;
+  
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.75s; /* Smooth transition */
+}
+
+.next
+{
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0px 3px 3px 0px;
+  user-select: none;
+
+  top: 35px; /* Center vertically */
+  right: 20px;
+  transform: translateY(-50%);
+}
+  
+  /* Position the "next button" to the right */
+.next 
+{
+  background-color: black;
+  border-radius: 400px 400px 400px 400px;
+}
+
+.next:hover 
+{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: .95s;
+}
+
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: .95s;
+}
+
+@keyframes fade-out
+{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fade 
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

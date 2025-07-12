@@ -1,0 +1,192 @@
+.header
+{
+    background-color: rgb(191, 132, 69);
+    
+    height: 5%;
+
+    border-radius: 20px;
+    border: none;
+
+    display: flex;
+    flex: 1;
+    /* lets the element shrink/grow */
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+
+    z-index: 100;
+
+    padding-top: 3px;
+}
+
+/* Left section */
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    flex: 1;
+}
+  
+  /* Right section */
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content (button) to the right */
+    flex: 1;
+}
+
+.initial
+{
+    width: 7vh;
+    height: 13vh;
+
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.name
+{
+    font-family: "Monaco";
+    font-style: italic;
+    font-size: 3vh;
+    text-decoration: none;
+    color: black;
+
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    transition: 1s;
+
+    flex: 1;
+
+    width: 0;
+}
+
+.menu-items
+{
+    font-size: 15px;
+    font-family: 'Lora', serif;
+
+    margin-left: 15px;
+
+    transition: 1s;
+
+    text-decoration: none;
+    color: black;
+
+    flex: 1;
+}
+
+.name:hover,
+.firstrow:hover,
+.menu-items:hover
+{
+    cursor: pointer;
+    color: white;
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    margin-bottom: 15px;
+
+    flex: 1;
+}
+
+.firstrow
+{
+    font-size: 5vh;
+
+    display: inline;
+    
+    margin-top: 15px;
+
+    transition: 1s;
+
+    text-decoration: none;
+
+    color: black;
+
+    flex: 1;
+}
+
+.milk_tea
+{
+    font-style: italic;
+    font-family: "Didot"
+}
+
+.secondrow
+{
+    font-family: 'Courgette', cursive;
+
+    display: inline;
+    margin-top: -5px;
+
+    flex: 1;
+}
+
+/* The sidepanel menu */
+.sidepanel 
+{
+    display: flex;
+    flex-direction: column;
+    height: 350px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    opacity: 0.95;
+    z-index: 1; /* Stay on top */
+    top: -3px;
+    margin-right: 1px; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 55px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+  
+  /* The sidepanel links */
+.sidepanel a {
+    padding-top: 10px;
+    padding-left: 10px;
+    
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    color: black;
+    background-color: rgb(191, 132, 69);
+}
+
+.last-item
+{
+    padding-bottom: 10px;
+}
+  /* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: white;
+}
+  
+  /* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    align-self: flex-start;
+    margin-right: 30px;
+    z-index: 3
+}
+  
+.openbtn:hover {
+    color: white;
+}
