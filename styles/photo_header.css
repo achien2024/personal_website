@@ -149,7 +149,9 @@
     background: none;
     align-self: flex-start;
     margin-right: 30px;
-    z-index: 3
+    z-index: 3;
+
+    margin-top: -8px;
 }
   
 .photo_name:hover,

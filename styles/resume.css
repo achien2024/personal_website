@@ -1,3 +1,24 @@
+@media (max-width: 768px) {
+  .resume_page {
+    margin: 40px auto !important;     /* less top margin */
+    padding-bottom: 20px !important;  /* smaller bottom padding */
+  }
+
+  .coverletter {
+    margin-top: 20px !important;      /* less spacing between sections */
+    padding-bottom: 20px !important;  /* smaller bottom padding */
+  }
+
+  .work_experience {
+    font-size: 24px !important;       /* scale text down if needed */
+  }
+
+  .company_location,
+  .position_time {
+    font-size: 16px !important;
+  }
+}
+
 .resume_page
 {
     display: flex;
@@ -6,10 +27,9 @@
     background-color: bisque;
 
     width: 98%;
-
+    max-width: 2000px;   /* ✨ limit total width */
+    margin: 100px auto;
     border-radius: 30px;
-
-    margin-top: 50px;
 
     padding-bottom: 40px;
 }

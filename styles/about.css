@@ -6,10 +6,9 @@
     background-color: bisque;
 
     width: 98%;
-
+    max-width: 2000px;   /* ✨ limit total width */
+    margin: 100px auto;
     border-radius: 30px;
-
-    margin-top: 50px;
 }
 
 .about_section
@@ -19,6 +18,7 @@
     align-items: top;
 
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .img_container 
@@ -60,6 +60,9 @@
     border-color: black;
 
     opacity: 0;
+
+    text-align: center;
+
 }
 
 .img_container:hover
@@ -98,4 +101,31 @@
 {
     cursor: pointer;
     color: white;
+}
+
+/* ✅ media query should be AFTER base rules */
+@media (max-width: 500px) {
+    .section_title
+    {
+        margin-bottom: 10px !important;
+    }
+
+    .about_section {
+        flex-direction: column;      /* stack children vertically */
+        align-items: center;         /* center content horizontally */
+    }
+
+    .about_img {
+        margin-left: 0 !important;   /* remove left margin */
+        width: 90%;                  /* scale image down */
+        height: auto;                /* keep aspect ratio */
+    }
+
+    .about_text {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;    /* remove negative margin */
+        text-align: left;          /* center text */
+        width: 90%;                  /* limit text width */
+    }
 }

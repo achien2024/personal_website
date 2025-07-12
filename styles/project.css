@@ -8,12 +8,11 @@
     background-color: bisque;
 
     width: 98%;
-
+    max-width: 2000px;   /* ✨ limit total width */
+    margin: 100px auto;
     border-radius: 30px;
 
-    margin-top: 50px;
-
-    padding-bottom: 180px;
+    padding-bottom: clamp(90px, 10vw, 1000px);
 
     position: relative;
 }
